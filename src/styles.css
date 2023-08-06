@@ -6,7 +6,7 @@
     display: block;
     padding: 20px;
     border: 1px solid grey;
-    background: rgb(98, 132, 241);
+    background: linear-gradient(-225deg, #5D9FFF 0%, #B8DCFF 48%, #6BBBFF 100%);
   }
   body {
     font-family: Arial, Helvetica, sans-serif;
