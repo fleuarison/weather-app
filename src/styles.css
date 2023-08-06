@@ -1,0 +1,35 @@
+.card-title {
+    color: blue;
+  }
+  .card {
+    margin: 20px auto;
+    display: block;
+    padding: 20px;
+    border: 1px solid grey;
+    background: rgb(98, 132, 241);
+  }
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .caracteristic {
+    font-style: italic;
+  }
+  .temperatureToday {
+    font-size: 70px;
+    font-family: sans-serif;
+    font-weight: lighter;
+  }
+  h5 {
+    font-size: 40px;
+    text-align: center;
+  }
+  .today {
+    font-size: 25px;
+    color: #7c7c7c;
+    font-weight: lighter;
+  }
+  .adjective {
+    font-size: 20px;
+    font-weight: lighter;
+    color: #7c7c7c;
+  }
