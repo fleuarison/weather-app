@@ -33,3 +33,17 @@
     font-weight: lighter;
     color: #7c7c7c;
   }
+  p {
+    text-align: center;
+    font-weight: 100;
+    font-family: monospace;
+    color: rgb(39, 38, 38);
+  }
+  a{
+    text-decoration: none;
+    transition: all 200ms ease-in-out;
+  }
+  a:hover {
+text-decoration: underline;
+cursor: pointer;
+  }
