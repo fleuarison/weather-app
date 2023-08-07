@@ -1,5 +1,4 @@
 function formatDate(date) {
-  let now = new Date();
   let hours = now.getHours();
   if (hours < 10) {
     hours = `0${hours}`;
@@ -20,8 +19,6 @@ function formatDate(date) {
   let day = days[now.getDay()];
   return `${day} ${hours}:${minutes}`;
 }
-let dateToday = document.querySelector("#date");
-dateToday.innerHTML = formatDate("now");
 
 function weatherCity(response) {
   document.querySelector("#new-city").innerHTML = response.data.name;
@@ -47,10 +44,6 @@ function handleSubmit(event) {
   let cityInput = document.querySelector("#city-input").value;
   search(cityInput);
 }
-let searchForm = document.querySelector("#search-form");
-searchForm.addEventListener("submit", handleSubmit);
-
-search("Antananarivo");
 
 function showPosition(position) {
   let apiKey = "6782253072f7d90462731a624097fc54";
@@ -63,5 +56,26 @@ function getCurrentPosition(event) {
   navigator.geolocation.getCurrentPosition(showPosition);
 }
 
+function toFahrenheit(event) {
+  event.preventDefault();
+  let degree = document.querySelector("#degree");
+  degree.innerHTML = 62.5;
+}
+
+function toCelsius(event) {
+  event.preventDefault();
+  let degree = document.querySelector("#degree");
+  degree.innerHTML = 17;
+}
+
+let dateToday = document.querySelector("#date");
+let now = new Date();
+dateToday.innerHTML = formatDate("now");
+
+let searchForm = document.querySelector("#search-form");
+searchForm.addEventListener("submit", handleSubmit);
+
 let locationButton = document.querySelector("#location");
 locationButton.addEventListener("click", getCurrentPosition);
+
+search("Antananarivo");
